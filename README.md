@@ -403,7 +403,7 @@ The options that LWP relates to are:
     [IO::Socket::SSL](https://metacpan.org/pod/IO%3A%3ASocket%3A%3ASSL). With this change, setting this option no longer disables all SSL
     certificate verification, only the hostname checks. To disable all verification,
     use the `SSL_verify_mode` option in the `ssl_opts` attribute. For example:
-    `$ua-`ssl\_opts(SSL\_verify\_mode => IO::Socket::SSL::SSL\_VERIFY\_NONE);>
+    `$ua->ssl_opts(SSL_verify_mode => IO::Socket::SSL::SSL_VERIFY_NONE);`
 
 - `SSL_ca_file` => $path
 
